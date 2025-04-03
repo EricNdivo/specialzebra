@@ -3,7 +3,7 @@ from rest_framework.routers import DefaultRouter
 from .views import SpecialZebraViewSet
 
 router = DefaultRouter()
-router.register(r'zebra', SpecialZebraViewSet, basename='zebra')
+router.register(r'specialzebra', SpecialZebraViewSet, basename='specialzebra')
 
 urlpatterns = [
     path('', include(router.urls)),
